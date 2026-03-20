@@ -1,0 +1,10 @@
+{
+    "name": "vikaputinceva/practik_server",
+    "description": "/",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    }
+}
