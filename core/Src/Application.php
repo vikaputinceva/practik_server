@@ -22,10 +22,14 @@ class Application
 
     public function __get($key)
     {
-        if ($key === 'settings') {
-            return $this->settings;
+        switch ($key) {
+            case 'settings':
+                return $this->settings;
+            case 'route':
+                return $this->route;
+            default:
+                throw new Error('Accessing a non-existent property');
         }
-        throw new Error('Accessing a non-existent property');
     }
 
     private function dbRun()
